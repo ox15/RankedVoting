@@ -1,13 +1,25 @@
-#include "Increments.h"
+#include "Tally.h"
 
 int main()
 {
-    stack<string> d;
-    d.push("42 1 2 3 4 5");
-    d.push("34 5 2 4 1 3");
-    d.push("27 2 5 4 1 3");
-    d.push("38 1 3 4 2 5");
-    // make an instance of Increments with the data
-    Increments in(d);
-    in.dataArray();
+    // missing stuff here
+
+    Tally newVote;
+    int county, a, b, c, d, e;
+    for (int i = 0; i < 10000; i++) {
+        county = counties[rand() % 62];
+        a = 1 + rand() % 5;
+        a = 1 + rand() % 5;
+        while (a == b)
+            b = 1 + rand() % 5;
+        c = 1 + rand() % 5;
+        while (c == a || c == b)
+            c = 1 + rand() % 5;
+        d = 1 + rand() % 5;
+        while (d == a || d == b || d == c)
+            d = 1 + rand() % 5;
+        e = 1 + rand() % 5;
+        while (e == a || e == b || e == c || e == d)
+            e = 1 + rand() % 5;
+    }
 }
